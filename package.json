@@ -1,0 +1,29 @@
+{
+  "name": "@ngxrb/rules",
+  "version": "0.0.0-SEMANTIC-RELEASE",
+  "description": "AngularRB linter rules library to enforce a consistent code style",
+  "keywords": ["tslint", "linting-rules", "angular", "codelyzer", "eslint", "sonarts"],
+  "homepage": "https://github.com/ngxrb/rules#readme",
+  "bugs": "https://github.com/ngxrb/rules/issues",
+  "license": "MIT",
+  "author": "Ricardo Javier Barrios Díaz <ricardojbarrios@gmail.com>",
+  "main": "./tslint.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngxrb/rules.git"
+  },
+  "devDependencies": {
+    "semantic-release": "^15.4.0"
+  },
+  "peerDependencies": {
+    "codelyzer": ">=4.3.0",
+    "tslint": ">=5.10.0",
+    "tslint-eslint-rules": ">=5.3.0",
+    "tslint-microsoft-contrib": ">=5.0.0",
+    "tslint-sonarts": ">=1.6.0"
+  },
+  "private": false,
+  "release": {
+    "branch": "master"
+  }
+}
