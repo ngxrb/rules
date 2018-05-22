@@ -1,4 +1,6 @@
-# @ngxrb/rules
+[![GitHub license](https://img.shields.io/github/license/ngxrb/rules.svg)](https://github.com/ngxrb/rules/blob/master/LICENSE)
+
+# AngularRB rules
 
 AngularRB linter rules library to enforce a consistent code style.
 
