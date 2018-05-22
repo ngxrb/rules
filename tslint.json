@@ -1,10 +1,10 @@
 {
   "extends": [
-    "./rules/tslint-rules.json",
+    "./rules/microsoft-contrib-rules.json",
+    "./rules/tslint-clean-code-rules.json",
     "./rules/tslint-eslint-rules.json",
     "./rules/codelyzer-rules.json",
-    "./rules/microsoft-contrib-rules.json",
     "./rules/tslint-sonarts-rules.json",
-    "./rules/tslint-clean-code-rules.json"
+    "./rules/tslint-rules.json"
   ]
 }
