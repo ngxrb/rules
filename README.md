@@ -1,4 +1,4 @@
-[![GitHub license](https://img.shields.io/github/license/ngxrb/rules.svg)](https://github.com/ngxrb/rules/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/ngxrb/rules.svg)](https://github.com/ngxrb/rules/blob/master/LICENSE) [![Build Status](https://travis-ci.org/ngxrb/rules.svg?branch=master)](https://travis-ci.org/ngxrb/rules)
 
 # AngularRB rules
 
