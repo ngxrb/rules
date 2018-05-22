@@ -13,6 +13,8 @@
     "url": "https://github.com/ngxrb/rules.git"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^2.0.2",
+    "@semantic-release/git": "^5.0.0",
     "semantic-release": "^15.5.0"
   },
   "peerDependencies": {
@@ -24,6 +26,14 @@
     "tslint-sonarts": ">=1.6.0"
   },
   "private": false,
+  "release": {
+    "verifyConditions": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ],
+    "prepare": ["@semantic-release/changelog", "@semantic-release/npm", "@semantic-release/git"]
+  },
   "publishConfig": {
     "access": "public"
   }
