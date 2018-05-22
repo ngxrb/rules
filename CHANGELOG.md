@@ -1,3 +1,12 @@
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/ngxrb/rules/compare/v1.0.3...v1.0.4) (2018-05-22)
+
+
+### Bug Fixes
+
+* **ci:** changed release ([44af738](https://github.com/ngxrb/rules/commit/44af738))
+* **release:** changed release ([011f0a5](https://github.com/ngxrb/rules/commit/011f0a5))
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/ngxrb/rules/compare/v1.0.2...v1.0.3) (2018-05-22)
 
