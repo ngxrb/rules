@@ -1,3 +1,14 @@
+<a name="1.0.5"></a>
+## [1.0.5](https://github.com/ngxrb/rules/compare/v1.0.4...v1.0.5) (2018-05-22)
+
+
+### Bug Fixes
+
+* merge ([9ec6c4d](https://github.com/ngxrb/rules/commit/9ec6c4d))
+* **ci:** go back ([d47b804](https://github.com/ngxrb/rules/commit/d47b804))
+* **ci:** test ([1f3b001](https://github.com/ngxrb/rules/commit/1f3b001))
+* **ci:** test ci ([f11efe9](https://github.com/ngxrb/rules/commit/f11efe9))
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/ngxrb/rules/compare/v1.0.3...v1.0.4) (2018-05-22)
 
