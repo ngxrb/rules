@@ -24,7 +24,7 @@
     "tslint-sonarts": ">=1.6.0"
   },
   "private": false,
-  "release": {
-    "branch": "master"
+  "publishConfig": {
+    "access": "public"
   }
 }
