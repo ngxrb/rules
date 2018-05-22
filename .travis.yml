@@ -5,5 +5,4 @@ jobs:
     - stage: npm release
       node_js: 8
       if: branch = master
-      node_js: lts/*
       script: npx semantic-release
