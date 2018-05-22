@@ -2,7 +2,7 @@
   "name": "@ngxrb/rules",
   "version": "0.0.0-development",
   "description": "AngularRB linter rules library to enforce a consistent code style",
-  "keywords": ["tslint", "linting-rules", "angular", "codelyzer", "eslint", "sonarts"],
+  "keywords": ["tslint", "tslint-rules", "angular"],
   "homepage": "https://github.com/ngxrb/rules#readme",
   "bugs": "https://github.com/ngxrb/rules/issues",
   "license": "MIT",
@@ -13,6 +13,8 @@
     "url": "https://github.com/ngxrb/rules.git"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^2.0.2",
+    "@semantic-release/git": "^5.0.0",
     "semantic-release": "^15.5.0"
   },
   "peerDependencies": {
@@ -26,5 +28,13 @@
   "private": false,
   "publishConfig": {
     "access": "public"
+  },
+  "release": {
+    "verifyConditions": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ],
+    "prepare": ["@semantic-release/changelog", "@semantic-release/npm", "@semantic-release/git"]
   }
 }
