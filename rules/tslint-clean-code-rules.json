@@ -1,0 +1,17 @@
+{
+  "extends": ["tslint-clean-code"],
+  "rules": {
+    "id-length": [true, ["T"]],
+    "max-func-args": [true, 3],
+    "min-class-cohesion": true,
+    "newspaper-order": true,
+    "no-commented-out-code": true,
+    "no-complex-conditionals": [true, 2],
+    "no-feature-envy": [true, 5, ["_", "ts"]],
+    "no-flag-args": true,
+    "no-for-each-push": true,
+    "no-map-without-usage": true,
+    "prefer-dry-conditionals": [true, 2],
+    "try-catch-first": true
+  }
+}

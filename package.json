@@ -18,6 +18,7 @@
   "peerDependencies": {
     "codelyzer": ">=4.3.0",
     "tslint": ">=5.10.0",
+    "tslint-clean-code": ">=0.2.7",
     "tslint-eslint-rules": ">=5.3.0",
     "tslint-microsoft-contrib": ">=5.0.0",
     "tslint-sonarts": ">=1.6.0"

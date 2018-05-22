@@ -9,13 +9,14 @@ AngularRB linter rules library to enforce a consistent code style.
 You can install @ngxrb/rules, and all its dependencies, using npm.
 
 ```shell
-npm install @ngxrb/rules tslint codelyzer tslint-sonarts tslint-eslint-rules tslint-microsoft-contrib --save-dev
+npm install @ngxrb/rules tslint codelyzer tslint-sonarts tslint-eslint-rules tslint-microsoft-contrib tslint-clean-code --save-dev
 ```
 
 * [Codelyzer](https://github.com/mgechev/codelyzer) >= 4.3.0: A set of tslint rules for static code analysis of Angular TypeScript projects.
 * [ESLint rules for TSLint](https://github.com/buzinas/tslint-eslint-rules) >= 5.3.0: Improve your TSLint with the missing ESLint rules.
 * [SonarTS](https://github.com/SonarSource/SonarTS) >= 1.6.0: Static code analyzer for TypeScript detecting bugs and suspicious patterns in your code.
 * [tslint-microsoft-contrib](https://github.com/Microsoft/tslint-microsoft-contrib) >= 5.0.0: A set of TSLint rules used on some Microsoft projects.
+* [tslint-clean-code](https://github.com/Glavin001/tslint-clean-code) >= 0.2.7: A set of TSLint rules used to enforce Clean Code practices. Inspired by Clean Code: A Handbook of Agile Software Craftsmanship.
 
 ## Usage
 
