@@ -26,19 +26,15 @@
     "tslint-sonarts": ">=1.6.0"
   },
   "private": false,
-  "publishConfig": {
-    "access": "public"
-  },
   "release": {
     "verifyConditions": [
       "@semantic-release/changelog",
-      "@semantic-release/github",
       "@semantic-release/npm",
       "@semantic-release/git"
     ],
-    "prepare": ["@semantic-release/changelog", "@semantic-release/npm", "@semantic-release/git"],
-    "publish": ["@semantic-release/npm"],
-    "success": ["@semantic-release/github"],
-    "fail": ["@semantic-release/github"]
+    "prepare": ["@semantic-release/changelog", "@semantic-release/npm", "@semantic-release/git"]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
