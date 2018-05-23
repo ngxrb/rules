@@ -1,17 +1,5 @@
 # TSLint rules
 
-* Member **overloads** MUST be **consecutive** to improve readability and organization by grouping naturally related items together. [TSLint](https://palantir.github.io/tslint/rules/adjacent-overload-signatures/)
-
-```json
-"adjacent-overload-signatures": true
-```
-
-* **Arrays** MUST be defined as `type[]` instead of `Array<type>` to improve consistency throughout the code. [TSLint](https://palantir.github.io/tslint/rules/array-type/)
-
-```json
-"array-type": [true, "array"]
-```
-
 * **Arrow lambdas** MUST prefer **return as** `() => x` over `() => { return x; }`. It’s unnecessary to include return and {} brackets in arrow lambdas. Leaving them out results in simpler and easier to read code. [TSLint](https://palantir.github.io/tslint/rules/arrow-return-shorthand/), [ESLint](https://github.com/buzinas/tslint-eslint-rules/blob/master/src/docs/rules/terArrowBodyStyleRule.md)
 
 ```json
@@ -29,18 +17,6 @@
 
 ```json
 "ban-comma-operator": true
-```
-
-* MUST NOT use the types **`Number`, `String`, `Boolean`, or `Object`**. These types refer to non-primitive boxed objects that are almost never used appropriately in JavaScript code. [TSLint](https://palantir.github.io/tslint/rules/ban-types/)
-
-```json
-"ban-types": [true,
-  ["Object", "Use {} instead."],
-  ["object", "Use {} instead."],
-  ["String", "Use string instead."],
-  ["Number", "Use number instead."],
-  ["Boolean", "Use boolean instead."]
-]
 ```
 
 * In a binary expression, a **literal** should always be on the **right-hand side** if possible. Sticking to a consistent grammar for conditions helps keep code readable and understandable. [TSLint](https://palantir.github.io/tslint/rules/binary-expression-operand-order/)

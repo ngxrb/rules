@@ -6,24 +6,6 @@
 "no-duplicate-string": [true, 2]
 ```
 
-* Collections elements SHOULD NOT be **overwritten unconditionally**. [SonarTS](https://github.com/SonarSource/SonarTS/blob/master/sonarts-core/docs/rules/no-element-overwrite.md)
-
-```json
-"no-element-overwrite": true
-```
-
-* **`delete`** SHOULD NOT be used on **arrays**. The `delete` operator can be used with arrays, but if it is, a hole will be left in the array because the indexes/keys won't be shifted to reflect the deletion. Use `splice`, `pop` or `shift` instead. [SonarTS](https://github.com/SonarSource/SonarTS/blob/master/sonarts-core/docs/rules/no-array-delete.md).
-
-```json
-"no-array-delete": true
-```
-
-* **Collection sizes** and **array length comparisons** SHOULD make sense. The size of a collection and the length of an array are always greater than or equal to zero. Perhaps the intent was to check the non-emptiness of the collection or array instead. [SonarTS](https://github.com/SonarSource/SonarTS/blob/master/sonarts-core/docs/rules/no-collection-size-mischeck.md).
-
-```json
-"no-collection-size-mischeck": true
-```
-
 * **Two branches** in a conditional structure SHOULD NOT have exactly the **same implementation**. [SonarTS](https://github.com/SonarSource/SonarTS/blob/master/sonarts-core/docs/rules/no-duplicated-branches.md)
 
 ```json

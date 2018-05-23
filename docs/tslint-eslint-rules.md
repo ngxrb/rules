@@ -115,13 +115,6 @@
 "ter-no-script-url": true
 ```
 
-* MUST NOT allow **sparse arrays**. Invalid or irregular whitespace causes issues with ECMAScript 5 parsers and also makes code harder to debug in a similar nature to mixed tabs and spaces. Missing elements are also probably an accidentally duplicated comma. [TSLint](https://palantir.github.io/tslint/rules/no-sparse-arrays/), [ESLint](https://github.com/buzinas/tslint-eslint-rules/blob/master/src/docs/rules/terNoSparseArraysRule.md)
-
-```json
-"no-sparse-arrays": true,
-"ter-no-sparse-arrays": [true]
-```
-
 * MUST require **arrow functions as callbacks**. Arrow functions are suited to callbacks, because `this` keywords in arrow functions bind to the upper scope’s, and the notation of the arrow function is shorter than function expression’s. [ESLint](https://github.com/buzinas/tslint-eslint-rules/blob/master/src/docs/rules/terPreferArrowCallbackRule.md)
 
 ```json
