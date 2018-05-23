@@ -1,3 +1,11 @@
+<a name="1.0.9"></a>
+## [1.0.9](https://github.com/ngxrb/rules/compare/v1.0.8...v1.0.9) (2018-05-23)
+
+
+### Bug Fixes
+
+* **ci:** try to fix npm post ([dbb7224](https://github.com/ngxrb/rules/commit/dbb7224))
+
 <a name="1.0.8"></a>
 ## [1.0.8](https://github.com/ngxrb/rules/compare/v1.0.7...v1.0.8) (2018-05-22)
 
