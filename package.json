@@ -1,6 +1,6 @@
 {
   "name": "@ngxrb/rules",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "AngularRB linter rules library to enforce a consistent code style",
   "keywords": [
     "tslint",

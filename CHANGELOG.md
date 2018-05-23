@@ -1,3 +1,11 @@
+<a name="1.0.10"></a>
+## [1.0.10](https://github.com/ngxrb/rules/compare/v1.0.9...v1.0.10) (2018-05-23)
+
+
+### Bug Fixes
+
+* **ci:** new test ([63b8f58](https://github.com/ngxrb/rules/commit/63b8f58))
+
 <a name="1.0.9"></a>
 ## [1.0.9](https://github.com/ngxrb/rules/compare/v1.0.8...v1.0.9) (2018-05-23)
 
