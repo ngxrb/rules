@@ -2,16 +2,12 @@
   "name": "@ngxrb/rules",
   "version": "1.0.12",
   "description": "AngularRB linter rules library to enforce a consistent code style",
-  "keywords": [
-    "tslint",
-    "tslint-rules",
-    "angular"
-  ],
+  "keywords": ["tslint", "tslint-rules", "angular"],
   "homepage": "https://github.com/ngxrb/rules#readme",
   "bugs": "https://github.com/ngxrb/rules/issues",
   "license": "MIT",
   "author": "Ricardo Javier Barrios Díaz <ricardojbarrios@gmail.com>",
-  "main": "./tslint.json",
+  "main": "./tslint.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ngxrb/rules.git"
@@ -36,11 +32,7 @@
       "@semantic-release/npm",
       "@semantic-release/git"
     ],
-    "prepare": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git"
-    ]
+    "prepare": ["@semantic-release/changelog", "@semantic-release/npm", "@semantic-release/git"]
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",

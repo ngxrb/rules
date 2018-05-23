@@ -1,10 +1,7 @@
 {
   "extends": "tslint-eslint-rules",
   "rules": {
-    "handle-callback-err": [
-      true,
-      "error"
-    ],
+    "handle-callback-err": [true, "error"],
     "no-constant-condition": true,
     "no-control-regex": true,
     "no-duplicate-case": true,
@@ -12,10 +9,7 @@
     "no-ex-assign": true,
     "no-extra-boolean-cast": true,
     "no-extra-semi": true,
-    "no-inner-declarations": [
-      true,
-      "both"
-    ],
+    "no-inner-declarations": [true, "both"],
     "no-invalid-regexp": true,
     "no-regex-spaces": true,
     "no-unexpected-multiline": true,
@@ -32,18 +26,11 @@
         "requireReturnForObjectLiteral": true
       }
     ],
-    "ter-newline-after-var": [
-      true
-    ],
+    "ter-newline-after-var": [true],
     "ter-no-proto": true,
     "ter-no-self-compare": true,
     "ter-no-script-url": true,
-    "ter-no-sparse-arrays": [
-      true
-    ],
-    "ter-prefer-arrow-callback": [
-      true
-    ],
+    "ter-prefer-arrow-callback": [true],
     "valid-jsdoc": [
       true,
       {
