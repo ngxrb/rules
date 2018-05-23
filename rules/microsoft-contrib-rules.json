@@ -61,12 +61,24 @@
     "no-unnecessary-local-variable": true,
     "no-unnecessary-override": true,
     "no-unnecessary-semicolons": true,
-    "no-unsupported-browser-code": [true, ["IE 11", "Firefox > 40", "Chrome >= 45"]],
+    "no-unsupported-browser-code": [
+      true,
+      [
+        "IE 11",
+        "Firefox > 40",
+        "Chrome >= 45"
+      ]
+    ],
     "no-useless-files": true,
     "no-with-statement": true,
     "non-literal-require": true,
     "possible-timing-attack": true,
-    "prefer-array-literal": [true, { "allow-type-parameters": true }],
+    "prefer-array-literal": [
+      true,
+      {
+        "allow-type-parameters": true
+      }
+    ],
     "prefer-type-cast": true,
     "promise-must-complete": true,
     "underscore-consistent-invocation": true,

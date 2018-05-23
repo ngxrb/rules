@@ -1,10 +1,16 @@
 {
   "extends": "tslint-sonarts",
   "rules": {
-    "cognitive-complexity": [true, 15],
+    "cognitive-complexity": [
+      true,
+      15
+    ],
     "consecutive-overloads": true,
     "max-union-size": true,
-    "mccabe-complexity": [true, 15],
+    "mccabe-complexity": [
+      true,
+      15
+    ],
     "no-accessor-field-mismatch": true,
     "no-all-duplicated-branches": true,
     "no-array-delete": true,
@@ -14,7 +20,10 @@
     "no-commented-code": true,
     "no-dead-store": true,
     "no-duplicate-in-composite": true,
-    "no-duplicate-string": [true, 2],
+    "no-duplicate-string": [
+      true,
+      2
+    ],
     "no-duplicated-branches": true,
     "no-element-overwrite": true,
     "no-empty-destructuring": true,
