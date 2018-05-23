@@ -1,3 +1,11 @@
+<a name="1.0.11"></a>
+## [1.0.11](https://github.com/ngxrb/rules/compare/v1.0.10...v1.0.11) (2018-05-23)
+
+
+### Bug Fixes
+
+* **npm:** added registry ([78029cb](https://github.com/ngxrb/rules/commit/78029cb))
+
 <a name="1.0.10"></a>
 ## [1.0.10](https://github.com/ngxrb/rules/compare/v1.0.9...v1.0.10) (2018-05-23)
 
