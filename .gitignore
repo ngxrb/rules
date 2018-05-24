@@ -5,3 +5,6 @@ node_modules/
 
 # misc
 npm-debug.log
+
+# local builds
+*.tgz
