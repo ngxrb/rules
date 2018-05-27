@@ -12,13 +12,23 @@
   * **Static** members should be ordered before instance members.
   * **Variables** should be ordered before functions. [TSLint](https://palantir.github.io/tslint/rules/member-ordering/)
 
+* <a name="unified-signatures"></a>SHOULD prefer **unifying** any two **overloads** into one, by using a union or an optional/rest parameter. [TSLint](https://palantir.github.io/tslint/rules/unified-signatures/)
+
 ## Interface design
 
 * <a name="no-empty-interface"></a>**Empty interfaces** SHOULD NOT be used, because are equivalent to its supertype. [TSLint](https://palantir.github.io/tslint/rules/no-empty-interface/)
 
+## Function design
+
+* <a name="only-arrow-functions"></a>SHOULD prefer defining anonymous functions as **fat-arrow/lambda** `() => { }` functions, unless it is absolutely necessary to preserve the context in the function body. [TSLint](https://palantir.github.io/tslint/rules/only-arrow-functions/)
+
 ## Types
 
 * Always SHOULD prefer **explicit type declaration** over type inference.
+
+* <a name="no-unnecessary-type-assertion"></a>SHOULT NOT use a **type assertion** if it does not change the type of an expression. [TSLint](https://palantir.github.io/tslint/rules/no-unnecessary-type-assertion/)
+
+* <a name="typedef"></a>**Type definitions** SHOULD be always used, with no implicit `any`. [TSLint](https://palantir.github.io/tslint/rules/typedef/)
 
 ### Basic types
 
@@ -46,6 +56,14 @@
 
 * <a name="no-parameter-reassignment"></a>**Assignment to parameters** SOULD be avoided, because can be misleading and lead to confusing behavior. [TSLint](https://palantir.github.io/tslint/rules/no-parameter-reassignment/), [ESLint](https://eslint.org/docs/rules/no-param-reassign)
 
+## Iterations
+
+* <a name="prefer-for-of"></a>SHOULD prefer **`for-of` loop** over a standard `for` loop as is easier to implement and read when the index is not needed. [TSLint](https://palantir.github.io/tslint/rules/prefer-for-of/)
+
+## Async
+
+* SHOULD avoid the use of **`promise`** and **`async/await`**. Use an RXJS `Observable` instead.
+
 ## Imports
 
 * <a name="no-import-side-effect"></a>**Import** statements with **side-effect** SHOULD be avoided, because may have behavior which is hard for static verification. [TSLint](https://palantir.github.io/tslint/rules/no-import-side-effect/)
@@ -54,4 +72,7 @@
 
 * <a name="no-namespace"></a>ES6-style **external modules** are the standard way to modularize code. SHOULD NOT use `module {}` and `namespace {}` to organize TypeScript code. [TSLint](https://palantir.github.io/tslint/rules/no-namespace/)
 
-- <a name="no-reference"></a>Using **`/// <reference path=>` comments** to load other files is outdated. MUST use ES6-style `imports` to reference other files. [TSLint](https://palantir.github.io/tslint/rules/no-reference/)
+* <a name="no-reference"></a>Using **`/// <reference path=>` comments** to load other files is outdated. MUST use ES6-style `imports` to reference other files. [TSLint](https://palantir.github.io/tslint/rules/no-reference/)
+
+* <a name="no-var-requires"></a>AMD-style `require([])` and CommonJS-style `require("")` MUST NOT be used. Use ES6-style import statement instead
+  [TSLint](https://palantir.github.io/tslint/rules/no-var-requires/)
