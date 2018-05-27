@@ -21,16 +21,9 @@
     "match-default-export-name": true,
     "max-classes-per-file": [true, 1],
     "max-file-line-count": [true, 400],
-    "member-access": true,
-    "member-ordering": [
-      true,
-      {
-        "order": ["static-field", "instance-field", "static-method", "instance-method"]
-      }
-    ],
     "newline-before-return": true,
     "no-angle-bracket-type-assertion": true,
-    "no-any": false,
+
     "no-arg": true,
     "no-bitwise": true,
     "no-boolean-literal-compare": true,
@@ -46,26 +39,23 @@
     "no-duplicate-variable": [true, "check-parameters"],
     "no-dynamic-delete": true,
     "no-empty": false,
-    "no-empty-interface": true,
+
     "no-eval": true,
     "no-floating-promises": true,
     "no-for-in-array": true,
     "no-implicit-dependencies": [true, "dev"],
-    "no-import-side-effect": true,
-    "no-inferrable-types": false,
+
     "no-inferred-empty-object-type": true,
-    "no-internal-module": true,
+
     "no-invalid-template-strings": true,
-    "no-magic-numbers": true,
+
     "no-misused-new": true,
     "no-mergeable-namespace": true,
-    "no-namespace": true,
-    "no-non-null-assertion": true,
+
     "no-null-keyword": false,
     "no-object-literal-type-assertion": true,
     "no-parameter-properties": true,
-    "no-parameter-reassignment": true,
-    "no-reference": true,
+
     "no-redundant-jsdoc": true,
     "no-require-imports": true,
     "no-reference-import": true,
