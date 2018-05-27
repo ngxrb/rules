@@ -71,23 +71,23 @@
     "no-unnecessary-class": true,
     "no-unnecessary-initializer": true,
     "no-unnecessary-qualifier": true,
-    "no-unnecessary-type-assertion": false,
+
     "no-unsafe-any": false,
     "no-unsafe-finally": true,
     "no-unused-expression": true,
     "no-unused-variable": true,
     "no-use-before-declare": true,
     "no-var-keyword": true,
-    "no-var-requires": true,
+
     "no-void-expression": [true, "ignore-arrow-function-shorthand"],
     "object-literal-shorthand": true,
     "object-literal-sort-keys": false,
     "one-variable-per-declaration": true,
-    "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"],
+
     "ordered-imports": true,
     "prefer-conditional-expression": [true, "check-else-if"],
     "prefer-const": true,
-    "prefer-for-of": true,
+
     "prefer-function-over-method": [true, "allow-public", "allow-protected"],
     "prefer-method-signature": true,
     "prefer-object-spread": true,
@@ -95,7 +95,7 @@
     "prefer-switch": true,
     "prefer-template": true,
     "prefer-while": true,
-    "promise-function-async": true,
+
     "radix": true,
     "restrict-plus-operands": true,
     "return-undefined": true,
@@ -105,19 +105,7 @@
     "switch-final-break": true,
     "triple-equals": [true, "allow-null-check", "allow-undefined-check"],
     "type-literal-delimiter": true,
-    "typedef": [
-      true,
-      "call-signature",
-      "arrow-call-signature",
-      "parameter",
-      "arrow-parameter",
-      "property-declaration",
-      "variable-declaration",
-      "member-variable-declaration",
-      "object-destructuring",
-      "array-destructuring"
-    ],
-    "unified-signatures": true,
+
     "use-default-type-parameter": true,
     "use-isnan": true,
     "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"]

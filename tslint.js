@@ -1,11 +1,5 @@
 module.exports = {
-  extends: [
-    "codelyzer",
-    "tslint-clean-code",
-    "tslint-eslint-rules",
-    "tslint-microsoft-contrib",
-    "tslint-sonarts"
-  ],
+  extends: ["tslint-sonarts"],
   rules: {
     /**************************************************************************
      * Class and member design
@@ -18,6 +12,7 @@ module.exports = {
       "static-before-instance",
       "variables-before-functions"
     ],
+    "unified-signatures": true,
 
     /**************************************************************************
      * Interface design
@@ -25,9 +20,27 @@ module.exports = {
     "no-empty-interface": true,
 
     /**************************************************************************
+     * Function design
+     *************************************************************************/
+    "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"],
+
+    /**************************************************************************
      * Types
      *************************************************************************/
-    // "no-inferrable-types": false, // Always use types
+    // "no-inferrable-types": false, // Prefer explicit type declaration
+    "no-unnecessary-type-assertion": true,
+    typedef: [
+      true,
+      "call-signature",
+      "arrow-call-signature",
+      "parameter",
+      "arrow-parameter",
+      "property-declaration",
+      "variable-declaration",
+      "member-variable-declaration",
+      "object-destructuring",
+      "array-destructuring"
+    ],
 
     /*** Basic types *********************************************************/
     "ban-types": [
@@ -56,11 +69,27 @@ module.exports = {
     "no-parameter-reassignment": true,
 
     /**************************************************************************
+     * Iterations
+     *************************************************************************/
+    "prefer-for-of": true,
+
+    /**************************************************************************
+     * Async
+     *************************************************************************/
+    // "promise-function-async": false, // Use RXJS
+
+    /**************************************************************************
      * Imports
      *************************************************************************/
     "no-import-side-effect": true,
     "no-internal-module": true,
     "no-namespace": true,
-    "no-reference": true
+    "no-reference": true,
+    "no-var-requires": true
+
+    /**************************************************************************
+     * Style
+     *************************************************************************/
+    // "typedef-whitespace": false // Prettier
   }
 };
