@@ -54,11 +54,29 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 
 ## Assignments, variables and constants
 
+* <a name="no-arg"></a>SHOULD **avoid** the use of **`arguments.callee`** as makes various performance optimizations impossible. [TSLint](https://palantir.github.io/tslint/rules/no-arg/), [+info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments/callee)
+
 * <a name="no-magic-numbers"></a>**Magic numbers** SHOULD be avoided as they often lack documentation. Forcing them to be stored in variables gives them implicit documentation. `-1`, `0` and `1` are allowed by default. [TSLint](https://palantir.github.io/tslint/rules/no-magic-numbers/)
 
 * <a name="no-parameter-reassignment"></a>**Assignment to parameters** SOULD be avoided, because can be misleading and lead to confusing behavior. [TSLint](https://palantir.github.io/tslint/rules/no-parameter-reassignment/), [ESLint](https://eslint.org/docs/rules/no-param-reassign)
 
-## Iterations
+## Operators
+
+* <a name="ban-comma-operator"></a>SHOULD NOT use **comma operators** as can create a potential for many non-obvious bugs or lead to misunderstanding of code. [TSLint](https://palantir.github.io/tslint/rules/ban-comma-operator/), [+info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator)
+
+* <a name="no-bitwise"></a>SHOULD avoid the use of **bitwise operators** `&`, `&=`, `|`, `|=`, `^`, `^=`, `<<`, `<<=`, `>>`, `>>=`, `>>>`, `>>>=`, and `~` as are often typos. They also can be an indicator of overly clever code which decreases maintainability. [TSLint](https://palantir.github.io/tslint/rules/no-bitwise/)
+
+## Control structures
+
+* <a name="label-position"></a>**Labels** SHOULD only be on **`do/for/while/switch` statements**. While you can use labels on any block statement in JS, it is considered poor code structure to do so. [TSLint](https://palantir.github.io/tslint/rules/label-position/)
+
+### Conditionals
+
+* <a name="no-conditional-assignment"></a>SHOULD NOT use **assignment** in `do-while`, `for`, `if`, and `while` statements and conditional (ternary) expressions, because are often typos. They also can be an indicator of overly clever code which decreases maintainability. [TSLint](https://palantir.github.io/tslint/rules/no-conditional-assignment/)
+
+### Iterations
+
+* <a name="forin"></a>A **`for ... in`** statement SHOULD be **filtered** with an if statement to prevents accidental iteration over properties inherited from an object’s prototype. [TSLint](https://palantir.github.io/tslint/rules/forin/)
 
 * <a name="prefer-for-of"></a>SHOULD prefer **`for-of` loop** over a standard `for` loop as is easier to implement and read when the index is not needed. [TSLint](https://palantir.github.io/tslint/rules/prefer-for-of/)
 
@@ -76,5 +94,9 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 
 * <a name="no-reference"></a>Using **`/// <reference path=>` comments** to load other files is outdated. MUST use ES6-style `imports` to reference other files. [TSLint](https://palantir.github.io/tslint/rules/no-reference/)
 
-* <a name="no-var-requires"></a>AMD-style `require([])` and CommonJS-style `require("")` MUST NOT be used. Use ES6-style import statement instead
+* <a name="no-var-requires"></a>AMD-style `require([])` and CommonJS-style `require("")` MUST NOT be used. Use ES6-style import statement instead.
   [TSLint](https://palantir.github.io/tslint/rules/no-var-requires/)
+
+## Coding style
+
+* <a name="curly"></a>SHOULD always **enforces braces** for `if/for/do/while` statements. [TSLint](https://palantir.github.io/tslint/rules/curly/)
