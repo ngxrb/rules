@@ -69,31 +69,48 @@ module.exports = {
     /**************************************************************************
      * Assignments, variables and constants
      *************************************************************************/
+    "no-arg": true,
     "no-magic-numbers": true,
     "no-parameter-reassignment": true,
 
     /**************************************************************************
-     * Iterations
+     * Operators
      *************************************************************************/
+    "ban-comma-operator": true,
+    "no-bitwise": true,
+
+    /**************************************************************************
+     * Control structures
+     *************************************************************************/
+    "label-position": true,
+
+    /*** Conditionals ********************************************************/
+    "no-conditional-assignment": true,
+
+    /*** Iretations **********************************************************/
+    "forin": true,
     "prefer-for-of": true,
 
     /**************************************************************************
      * Async
      *************************************************************************/
+    // "await-promise": true, // Use RXJS
     // "promise-function-async": false, // Use RXJS
 
     /**************************************************************************
      * Imports
      *************************************************************************/
+    // "import-blacklist": false, // TODO - check libraries to ban
     "no-import-side-effect": true,
     "no-internal-module": true,
     "no-namespace": true,
     "no-reference": true,
-    "no-var-requires": true
+    "no-var-requires": true,
 
     /**************************************************************************
-     * Style
+     * Coding style
      *************************************************************************/
+    "curly": true,
     // "typedef-whitespace": false // Prettier
   }
 };
