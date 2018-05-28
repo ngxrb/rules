@@ -1,5 +1,7 @@
 # Rules
 
+The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+
 ## Class and member design
 
 * <a name="adjacent-overload-signatures"></a>Member **overloads** SHOULD be **consecutive** to improve readability and organization by grouping naturally related items together. [TSLint](https://palantir.github.io/tslint/rules/adjacent-overload-signatures/), [+info](https://github.com/nzakas/eslint-plugin-typescript/blob/master/docs/rules/adjacent-overload-signatures.md)
