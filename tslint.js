@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["tslint-sonarts"],
+  extends: ["tslint-sonarts", "tslint-eslint-rules"],
   rules: {
     /**************************************************************************
      * Class and member design
@@ -22,7 +22,11 @@ module.exports = {
     /**************************************************************************
      * Function design
      *************************************************************************/
-    "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"],
+    "only-arrow-functions": [
+      true,
+      "allow-declarations",
+      "allow-named-functions"
+    ],
 
     /**************************************************************************
      * Types
